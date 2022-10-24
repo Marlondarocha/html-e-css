@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* Regra @charset caso haja problemas com acentuação*/
+
+body {
+    background-color: lime;
+    color: blue;
+    font-size: 15px;
+    font-family: Arial;
+    background-image: linear-gradient(360deg, red, purple)
+}
+
+h1 {
+    color: darkred;
+    background-color: chartreuse;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+a {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
