@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif; 
+    --fonte-titulo: 'Passion One', 'Cursive';
+    --fonte-texto: 'Sriracha', 'Cursive', Arial, Helvetica;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    padding: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    color: white;
+    font-size: 9vw;
+}
+
+h2 {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+    padding-top: 65px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+}
+
+section#image1 {
+    background-image: url('imagens/background001.jpg');
+    position: relative;
+    background-position: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 40px;
+}
+
+section#image2 {
+    background-image: url('imagens/background002.jpg');
+    position: relative;
+    background-position: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 40px;
+}
+
+section.image {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+    background-size: 100% 100%;
+    background-size: cover;
+    position: absolute;
+    left: -5%;
+    top: -5%;
+    padding-right: 60px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.externo::after {
+    content: '\00A0\'
+}
