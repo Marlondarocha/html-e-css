@@ -26,6 +26,10 @@
             background-color: lightgrey;
         }
 
+        tbody > tr:nth-child(even) /* (odd) */ {
+            background-color: bisque;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -54,8 +58,8 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th>População</th>
-                <th>% da pop.total</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th style="width: 50px;">% da pop.total</th>
             </tr>
         </thead>
         <tbody>
@@ -197,7 +201,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
                 <td>100%</td>
             </tr>
