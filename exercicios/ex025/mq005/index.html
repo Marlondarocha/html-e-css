@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="item">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -25,15 +27,24 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius nihil eum nisi perspiciatis doloribus! Suscipit nostrum iusto fuga at dolorum, recusandae eveniet illum quos aliquid nesciunt ducimus eum sed?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est neque perspiciatis fuga molestiae quos error laborum esse nisi harum totam explicabo alias temporibus culpa ad incidunt, impedit iste accusantium nesciunt eius corporis. Vero sapiente repellendus laudantium, quos corporis voluptas cupiditate maxime dolores facere eum suscipit doloremque odit error illum nisi inventore expedita, optio cum eos ea est! Consectetur ab, beatae tenetur ea veniam blanditiis exercitationem tempora modi a assumenda enim officiis sit consequatur? Obcaecati cum autem pariatur doloribus molestias nostrum? Rem ipsam iure voluptates aliquid, et temporibus suscipit porro voluptatem ab repellendus nihil, dicta vitae iusto deleniti voluptatibus praesentium ex!
             </p>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam, aperiam aliquam necessitatibus, fugiat voluptatem veritatis laudantium quis magnam saepe debitis? Assumenda pariatur accusantium eligendi fugiat quibusdam tempora placeat culpa?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est neque perspiciatis fuga molestiae quos error laborum esse nisi harum totam explicabo alias temporibus culpa ad incidunt, impedit iste accusantium nesciunt eius corporis. Vero sapiente repellendus laudantium, quos corporis voluptas cupiditate maxime dolores facere eum suscipit doloremque odit error illum nisi inventore expedita, optio cum eos ea est! Consectetur ab, beatae tenetur ea veniam blanditiis exercitationem tempora modi a assumenda enim officiis sit consequatur? Obcaecati cum autem pariatur doloribus molestias nostrum? Rem ipsam iure voluptates aliquid, et temporibus suscipit porro voluptatem ab repellendus nihil, dicta vitae iusto deleniti voluptatibus praesentium ex!
             </p>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis reiciendis quae veritatis repellendus corrupti officia porro quasi iusto possimus! Natus cupiditate aspernatur magnam mollitia ratione laboriosam placeat a necessitatibus porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est neque perspiciatis fuga molestiae quos error laborum esse nisi harum totam explicabo alias temporibus culpa ad incidunt, impedit iste accusantium nesciunt eius corporis. Vero sapiente repellendus laudantium, quos corporis voluptas cupiditate maxime dolores facere eum suscipit doloremque odit error illum nisi inventore expedita, optio cum eos ea est! Consectetur ab, beatae tenetur ea veniam blanditiis exercitationem tempora modi a assumenda enim officiis sit consequatur? Obcaecati cum autem pariatur doloribus molestias nostrum? Rem ipsam iure voluptates aliquid, et temporibus suscipit porro voluptatem ab repellendus nihil, dicta vitae iusto deleniti voluptatibus praesentium ex!
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (item.style.display == 'block') {
+                item.style.display = 'none'
+            } else {
+                item.style.display = 'block'
+            } 
+        }
+    </script>
 </body>
 </html>
